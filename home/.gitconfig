@@ -5,3 +5,9 @@
 	diff = auto
 	status = auto
 	branch = auto
+	interactive = auto
+	ui = auto
+[push]
+	default = current
+[pull]
+	default = current
