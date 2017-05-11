@@ -6,6 +6,7 @@ HISTCONTROL=ignoreboth
 
 export GOPATH=$HOME
 export PATH=$GOPATH/bin::$PATH
+export PATH="/usr/local/opt/gnupg/libexec/gpgbin:$PATH"
 
 # I miss my old bash prompt
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ '
