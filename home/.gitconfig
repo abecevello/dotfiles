@@ -11,3 +11,9 @@
 	default = current
 [pull]
 	default = current
+[diff]
+	algorithm = patience
+[protocol]
+	version = 2
+[credential]
+	helper = osxkeychain
