@@ -1,6 +1,6 @@
 [user]
 	name = Adam Becevello
-	email = adam.becevello@shopify.com
+	email = adam@becevello.ca
 [color]
 	diff = auto
 	status = auto
@@ -17,3 +17,6 @@
 	version = 2
 [credential]
 	helper = osxkeychain
+
+[includeIf "gitdir:~/src/github.com/shopify/"]
+    path = ~/.shopify.gitconfig
