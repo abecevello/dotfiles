@@ -18,5 +18,5 @@
 [credential]
 	helper = osxkeychain
 
-[includeIf "gitdir:~/src/github.com/shopify/"]
+[includeIf "gitdir:~/src/github.com/Shopify/"]
     path = ~/.shopify.gitconfig
