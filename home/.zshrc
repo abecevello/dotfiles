@@ -1,8 +1,7 @@
 export GOPATH=$HOME
 export PATH=$GOPATH/bin::$PATH
-export PATH="/usr/local/opt/gnupg/libexec/gpgbin:$PATH"
-export PATH=$PATH:/Applications/p4merge.app/Contents/MacOS
-export NIX_PATH="~/.nix-profile/bin/nix"
+export PATH="/usr/local/opt/openssl/bin:/usr/local/opt/gnupg/libexec/gpgbin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # I miss my old bash prompt
 export PS1="%F{33}%n@%m:%~\$ %f"
