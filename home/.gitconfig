@@ -7,6 +7,8 @@
 	branch = auto
 	interactive = auto
 	ui = auto
+[fetch]
+	prune = true
 [push]
 	default = current
 [pull]
