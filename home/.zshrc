@@ -9,6 +9,9 @@ export PS1="%F{33}%n@%m:%~\$ %f"
 # I like vim
 export EDITOR="vim"
 
+# Use useful editor for `gem open`
+export GEM_EDITOR="code"
+
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
