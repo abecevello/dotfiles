@@ -19,6 +19,10 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# Enable auto completion in zsh
+autoload -Uz compinit
+compinit
+
 # load dev, but only if present and the shell is interactive
 if [[ -f /opt/dev/dev.sh ]] && [[ $- == *i* ]]; then
   source /opt/dev/dev.sh
