@@ -2,30 +2,21 @@
 	name = Adam Becevello
 	email = adam@becevello.ca
 [color]
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = auto
 	ui = auto
 [fetch]
 	prune = true
 [push]
-	default = current
+	default = upstream
 [pull]
-	default = current
+	rebase = true
+[rebase]
+	autostash = true
+	autosquash = true
 [diff]
-	algorithm = patience
-[protocol]
-	version = 2
-[credential]
-	helper = osxkeychain
+  colorMoved = zebra
 
 [includeIf "gitdir:~/src/github.com/Shopify/"]
-    path = ~/.shopify.gitconfig
-[core]
-	commitGraph = true
-[gc]
-	writeCommitGraph = true
+  path = ~/.shopify.gitconfig
 [url "https://github.com/Shopify/"]
 	insteadOf = git@github.com:Shopify/
 	insteadOf = git@github.com:shopify/
