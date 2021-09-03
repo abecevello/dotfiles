@@ -14,6 +14,13 @@
 	autosquash = true
 [diff]
   colorMoved = zebra
+  algorithm = patience
+[core]
+	commitGraph = true
+[gc]
+	writeCommitGraph = true
+[protocol]
+	version = 2
 
 [includeIf "gitdir:~/src/github.com/Shopify/"]
   path = ~/.shopify.gitconfig
