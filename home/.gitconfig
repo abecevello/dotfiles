@@ -22,7 +22,7 @@
 [protocol]
 	version = 2
 
-[includeIf "gitdir:~/src/github.com/Shopify/"]
+[includeIf "gitdir/i:src/github.com/Shopify/"]
   path = ~/.shopify.gitconfig
 [url "https://github.com/Shopify/"]
 	insteadOf = git@github.com:Shopify/
