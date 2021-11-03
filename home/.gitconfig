@@ -1,3 +1,5 @@
+[alias]
+	cleanup = !sh ~/.delete_local_merged_branches.sh
 [user]
 	name = Adam Becevello
 	email = adam@becevello.ca
