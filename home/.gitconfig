@@ -1,6 +1,10 @@
 [alias]
 	defaultbranch = "!f() { git remote show origin | awk '/HEAD branch/ {print $NF}'; }; f"
 	cleanup = "!f() { git branch --merged ${1-`git defaultbranch`} | grep -v ${1-`git defaultbranch`} | xargs -r git branch -d; }; f"
+	st = status
+	amend = commit --amend
+	nuke = reset --hard
+	uncommit = reset --soft HEAD^
 [user]
 	name = Adam Becevello
 	email = adam@becevello.ca
