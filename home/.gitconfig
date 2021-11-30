@@ -1,5 +1,6 @@
 [alias]
-	cleanup = !sh ~/.delete_local_merged_branches.sh
+	defaultbranch = "!f() { git remote show origin | awk '/HEAD branch/ {print $NF}'; }; f"
+	cleanup = "!f() { git branch --merged ${1-`git defaultbranch`} | grep -v ${1-`git defaultbranch`} | xargs -r git branch -d; }; f"
 [user]
 	name = Adam Becevello
 	email = adam@becevello.ca
