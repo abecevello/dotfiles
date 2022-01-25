@@ -3,8 +3,9 @@
 	cleanup = "!f() { git branch --merged ${1-`git defaultbranch`} | grep -v ${1-`git defaultbranch`} | xargs -r git branch -d; }; f"
 	st = status
 	amend = commit --amend
-	nuke = reset --hard
+	nuke = "!f() { git reset HEAD --hard && git clean -fd; }; f"
 	uncommit = reset --soft HEAD^
+	aliases = config --get-regexp ^alias\\.
 [user]
 	name = Adam Becevello
 	email = adam@becevello.ca
