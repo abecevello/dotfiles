@@ -6,6 +6,7 @@
 	nuke = "!f() { git reset HEAD --hard && git clean -fd; }; f"
 	uncommit = reset --soft HEAD^
 	aliases = config --get-regexp ^alias\\.
+	new-branch = "!f() { git checkout -b ${1}; }; f"
 [user]
 	name = Adam Becevello
 	email = adam@becevello.ca
