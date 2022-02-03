@@ -15,3 +15,6 @@ alias ga='git add'
 # rails
 alias bx='bundle exec'
 alias rt='bx ruby -I.:test'
+
+# kubernetes
+alias kc=kubectl
