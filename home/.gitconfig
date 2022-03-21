@@ -31,7 +31,7 @@
 [protocol]
 	version = 2
 
-[includeIf "gitdir/i:src/github.com/Shopify/"]
-  path = ~/.shopify.gitconfig
 [init]
 	defaultBranch = main
+[include]
+	path = ~/.shopify.gitconfig
