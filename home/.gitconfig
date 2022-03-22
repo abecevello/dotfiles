@@ -21,10 +21,10 @@
 	autostash = true
 	autosquash = true
 [diff]
-  colorMoved = zebra
-  algorithm = patience
+	colorMoved = zebra
 [init]
 	defaultBranch = main
 
 [include]
 	path = ~/.computer.gitconfig
+	path = /Users/adambecevello/.config/dev/gitconfig

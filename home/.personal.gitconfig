@@ -1,2 +1,4 @@
 [user]
     email = adam@becevello.ca
+[diff]
+    algorithm = patience
