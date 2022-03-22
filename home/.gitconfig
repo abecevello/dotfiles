@@ -9,7 +9,6 @@
 	new-branch = "!f() { git checkout -b ${1}; }; f"
 [user]
 	name = Adam Becevello
-	email = adam@becevello.ca
 [color]
 	ui = auto
 [fetch]
@@ -33,5 +32,6 @@
 
 [init]
 	defaultBranch = main
+
 [include]
-	path = ~/.shopify.gitconfig
+	path = ~/.computer.gitconfig
