@@ -23,13 +23,6 @@
 [diff]
   colorMoved = zebra
   algorithm = patience
-[core]
-	commitGraph = true
-[gc]
-	writeCommitGraph = true
-[protocol]
-	version = 2
-
 [init]
 	defaultBranch = main
 
