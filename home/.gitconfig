@@ -8,6 +8,7 @@
 	aliases = config --get-regexp ^alias\\.
 	new-branch = "!f() { git checkout -b ${1}; }; f"
 	co = checkout
+	main = checkout main
 [user]
 	name = Adam Becevello
 [color]
