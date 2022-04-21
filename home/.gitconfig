@@ -2,7 +2,7 @@
 	defaultbranch = "!f() { git remote show origin | sed -n '/HEAD branch/s/.*: //p'; }; f"
 	cleanup = "!f() { git branch --merged ${1-`git defaultbranch`} | grep -v ${1-`git defaultbranch`} | xargs -r git branch -d; }; f"
 	st = status
-	amend = commit --amend
+	amend = commit --amend --no-edit
 	nuke = "!f() { git reset HEAD --hard && git clean -fd; }; f"
 	uncommit = reset --soft HEAD^
 	aliases = config --get-regexp ^alias\\.
@@ -10,6 +10,11 @@
 	co = checkout
 	main = checkout main
 	delete = "!f() { git branch -D ${1}; }; f"
+	p = pull
+	l = log
+	pop = stash pop
+	a = add --all --verbose .
+	please = push --force-with-lease
 [user]
 	name = Adam Becevello
 [color]
