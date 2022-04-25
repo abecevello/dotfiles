@@ -15,6 +15,7 @@
 	pop = stash pop
 	a = add --all --verbose .
 	please = push --force-with-lease
+	empty = commit --allow-empty
 [user]
 	name = Adam Becevello
 [color]
