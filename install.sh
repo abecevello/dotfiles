@@ -11,30 +11,35 @@ function common_files {
   symlink $PWD/home/.gitconfig ~/.gitconfig
 }
 
-PS3='Computer type: '
-select computer in Personal Shopify
-do
-
-case $computer in
-  "Personal")
-  echo "Symlinking personal gitconfig"
-  symlink $PWD/home/.personal.gitconfig ~/.computer.gitconfig
-  common_files
-  break
-  ;;
-
-  "Shopify")
-  echo "Symlinking Shopify gitconfig"
+if [ "$SPIN" ]; then
   symlink $PWD/home/.shopify.gitconfig ~/.computer.gitconfig
   common_files
-  break
-  ;;
+else
+  PS3='Computer type: '
+  select computer in Personal Shopify
+  do
 
-  *)
-  echo "Invalid computer type"
-  break
-  ;;
-  esac
-done
+  case $computer in
+    "Personal")
+    echo "Symlinking personal gitconfig"
+    symlink $PWD/home/.personal.gitconfig ~/.computer.gitconfig
+    common_files
+    break
+    ;;
+
+    "Shopify")
+    echo "Symlinking Shopify gitconfig"
+    symlink $PWD/home/.shopify.gitconfig ~/.computer.gitconfig
+    common_files
+    break
+    ;;
+
+    *)
+    echo "Invalid computer type"
+    break
+    ;;
+    esac
+  done
+fi
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
