@@ -3,8 +3,8 @@ export PATH=$GOPATH/bin::$PATH
 export PATH="/usr/local/opt/openssl/bin:/usr/local/opt/gnupg/libexec/gpgbin:$PATH"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
-# I miss my old bash prompt
-export PS1="%F{33}%n@%m:%~\$ %f"
+# Change command prompt format
+export PS1="%F{33}%m:%~\$ %f"
 
 # I like vim
 export EDITOR="vim"
