@@ -23,7 +23,7 @@
 [fetch]
 	prune = true
 [push]
-	default = upstream
+	default = current
 	autoSetupRemote = true
 [pull]
 	rebase = true
