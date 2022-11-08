@@ -5,6 +5,9 @@ alias cd..='cd ..'
 # vim > vi
 alias vi='vim'
 
+# git
+alias gs="git s"
+
 # rails
 alias bx='bundle exec'
 
