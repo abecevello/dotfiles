@@ -12,7 +12,7 @@
 
 	# Branches
 	defaultbranch = "!f() { git symbolic-ref -q refs/remotes/origin/HEAD | cut -f4 -d/; }; f"
-	cleanup = "!f() { git branch --merged ${1-`git defaultbranch`} | grep -v ${1-`git defaultbranch`} | xargs -r git branch -d; }; f"
+	cleanup = "!f() { git-delete-merged-branches; }; f"
 	new-branch = "!f() { git checkout -b ${1}; }; f"
 	co = checkout
 	main = "!git checkout $(git defaultbranch)"
