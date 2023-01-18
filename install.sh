@@ -42,7 +42,7 @@ else
   done
 
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  brew install git-delete-merged-branches
+  brew install git-delete-merged-branches diff-so-fancy
 fi
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
