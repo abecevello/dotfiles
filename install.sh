@@ -14,6 +14,9 @@ function common_files {
 if [ "$SPIN" ]; then
   symlink $PWD/home/.shopify.gitconfig ~/.computer.gitconfig
   common_files
+
+  pip install git-delete-merged-branches
+  nix-env -i diff-so-fancy
 else
   PS3='Computer type: '
   select computer in Personal Shopify
