@@ -1,5 +1,6 @@
 # ls
 alias la='ls -la'
+alias ll='ls -l'
 alias cd..='cd ..'
 
 # vim > vi
