@@ -9,6 +9,7 @@ function common_files {
   symlink $PWD/home/.aliases ~/.aliases
   symlink $PWD/home/.zshrc ~/.zshrc
   symlink $PWD/home/.gitconfig ~/.gitconfig
+  symlink $PWD/home/.gitignore ~/.gitignore
 }
 
 if [ "$SPIN" ]; then

@@ -61,6 +61,7 @@
 	whitespace = red reverse
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = /Users/adambecevello/.gitignore
 [interactive]
 	diffFilter = diff-so-fancy --patch
 [fetch]
