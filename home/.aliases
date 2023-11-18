@@ -1,5 +1,5 @@
 # ls
-alias la='ls -la'
+alias la='ls -Alh'
 alias ll='ls -l'
 alias cd..='cd ..'
 
