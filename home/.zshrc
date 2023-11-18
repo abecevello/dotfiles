@@ -24,6 +24,9 @@ autoload -Uz compinit
 compinit
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Correct small spelling mistakes
+setopt correct
+
 # load dev, but only if present and the shell is interactive
 if [[ -f /opt/dev/dev.sh ]] && [[ $- == *i* ]]; then
   source /opt/dev/dev.sh

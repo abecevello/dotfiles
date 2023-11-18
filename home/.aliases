@@ -17,3 +17,8 @@ alias path='echo $PATH | tr -s ":" "\n"'
 
 # kubernetes
 alias kc=kubectl
+
+# Easy way to create a directory and immediately switch to it
+take () {
+    mkdir -p "$1" && cd "$1"
+}
