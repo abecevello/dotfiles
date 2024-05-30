@@ -67,6 +67,7 @@
 	diffFilter = diff-so-fancy --patch
 [fetch]
 	prune = true
+	writeCommitGraph = true
 [push]
 	default = current
 	autoSetupRemote = true
