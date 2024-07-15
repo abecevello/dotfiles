@@ -92,3 +92,5 @@
 	required = true
 [advice]
 	skippedCherryPicks = false
+[submodule]
+	recurse = true
