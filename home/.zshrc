@@ -3,8 +3,11 @@ export PATH=$GOPATH/bin::$PATH
 export PATH="/usr/local/opt/openssl/bin:/usr/local/opt/gnupg/libexec/gpgbin:$PATH"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
+# Shadowenv changes the HOST environment variable to be 127.0.0.1, preventing the correct hostname from appearing in the prompt
+export ORIGINAL_HOSTNAME="${${(%):-$(hostname)}%.local}"
+
 # Change command prompt format
-export PS1="%F{33}%m:%~\$ %f"
+export PS1="%F{33}$ORIGINAL_HOSTNAME:%~\$ %f"
 
 # I like vim
 export EDITOR="vim"
